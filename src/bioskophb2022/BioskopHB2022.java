@@ -1,19 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bioskophb2022;
 
 /**
  *
- * @author Dionisius
+ * @author Dionisius - James Jordan - Jason Nathaniel
  */
-public class BioskopHB2022 {
 
-    /**
-     * @param args the command line arguments
-     */
+class Branch{
+
+}
+
+class Studio{
+
+}
+
+class Film{
+
+}
+
+class FoodBvg{
+
+}
+
+class Transaction{
+
+}
+
+class BioskopHB2022 {
+
     public static void main(String[] args) {
         // TODO code application logic here
     }
