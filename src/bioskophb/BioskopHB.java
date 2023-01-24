@@ -1,4 +1,4 @@
-package bioskophb2022;
+package bioskophb;
 
 /**
  *
@@ -110,7 +110,7 @@ class Ticket {
     }
 }
 
-class BioskopHB2022 {
+class BioskopHB {
 
     public static void main(String[] args) {
         // inisialisasi sekaligus
