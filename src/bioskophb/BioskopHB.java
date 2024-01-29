@@ -36,19 +36,19 @@ class Film {
         this.title = _title;
         this.genre = _genre;
         this.duration = _duration;
-        this.schedule[0][0] = "Senin 26 Feb 22 jam 17";
-        this.schedule[0][1] = "Senin 26 Feb 22 jam 19";
-        this.schedule[1][0] = "Selasa 27 Feb 22 jam 17";
-        this.schedule[1][1] = "Selasa 27 Feb 22 jam 19";
-        this.schedule[2][0] = "Rabu 28 Feb 22 jam 17";
-        this.schedule[2][1] = "Rabu 28 Feb 22 jam 19";
+//        this.schedule[0][0] = "Senin 26 Feb 22 jam 17";
+//        this.schedule[0][1] = "Senin 26 Feb 22 jam 19";
+//        this.schedule[1][0] = "Selasa 27 Feb 22 jam 17";
+//        this.schedule[1][1] = "Selasa 27 Feb 22 jam 19";
+//        this.schedule[2][0] = "Rabu 28 Feb 22 jam 17";
+//        this.schedule[2][1] = "Rabu 28 Feb 22 jam 19";
     }
 }
 
 class Studio { // 1 studio hanya 1 film aja
 
     String code;
-    boolean[][] seats = new boolean[6][5]; 
+    boolean[][] seats = new boolean[6][5];
     int capacity; // seats.length
     Film film = new Film();
     // atau kalau mau dipisah ke Schedule, silakan. asal paham
@@ -64,24 +64,27 @@ class Studio { // 1 studio hanya 1 film aja
     }
 }
 
-class FoodBvg { // asumsi: makan dan minum jadi 1
+class Food {
 
     String name;
     int unitPrice;
 
-    public FoodBvg(String _name, int _unitPrice) {
+    public Food(String _name, int _unitPrice) {
         this.name = _name;
         this.unitPrice = _unitPrice;
     }
 }
 
-//class Schedule {
-//
-//    String hari;
-//    String jam;
-//    boolean[][] seats = new boolean[6][5];
-//
-//}
+class Beverages {
+
+    String name;
+    int unitPrice;
+
+    public Beverages(String _name, int _unitPrice) {
+        this.name = _name;
+        this.unitPrice = _unitPrice;
+    }
+}
 
 class User {
 
@@ -101,7 +104,8 @@ class Transaction {
     String txId;
     String txDate;
     Ticket ticket;
-    FoodBvg foodBvg;
+    Food food; // beli makan ga?
+    Beverages beverage; // beli minum ga?
 
     public Transaction(String _txId, String _txDate) {
         this.txId = _txId;
@@ -120,6 +124,13 @@ class Ticket {
     }
 }
 
+//class Schedule {
+//
+//    String hari;
+//    String jam;
+//    boolean[][] seats = new boolean[6][5];
+//
+//}
 class BioskopHB {
 
     public static void main(String[] args) {
