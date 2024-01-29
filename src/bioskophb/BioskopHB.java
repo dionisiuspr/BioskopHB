@@ -28,12 +28,6 @@ class Film {
     String genre;
     int duration;
     String[][] schedule = new String[3][2];
-    // this.schedule[0][0] = "Senin 26 Feb 22 jam 17";
-    // this.schedule[0][1] = "Senin 26 Feb 22 jam 19";
-    // this.schedule[1][0] = "Selasa 27 Feb 22 jam 17";
-    // this.schedule[1][1] = "Selasa 27 Feb 22 jam 19";
-    // this.schedule[2][0] = "Rabu 28 Feb 22 jam 17";
-    // this.schedule[2][1] = "Rabu 28 Feb 22 jam 19";
 
     public Film() {
     }
@@ -42,15 +36,23 @@ class Film {
         this.title = _title;
         this.genre = _genre;
         this.duration = _duration;
+        this.schedule[0][0] = "Senin 26 Feb 22 jam 17";
+        this.schedule[0][1] = "Senin 26 Feb 22 jam 19";
+        this.schedule[1][0] = "Selasa 27 Feb 22 jam 17";
+        this.schedule[1][1] = "Selasa 27 Feb 22 jam 19";
+        this.schedule[2][0] = "Rabu 28 Feb 22 jam 17";
+        this.schedule[2][1] = "Rabu 28 Feb 22 jam 19";
     }
 }
 
 class Studio { // 1 studio hanya 1 film aja
 
     String code;
-    boolean[][] seats = new boolean[6][5]; // atau kalau mau dipisah ke Schedule, silakan. asal paham
+    boolean[][] seats = new boolean[6][5]; 
     int capacity; // seats.length
     Film film = new Film();
+    // atau kalau mau dipisah ke Schedule, silakan. asal paham
+    // Schedule schedule = new Schedule();
 
     public Studio() {
         this.capacity = seats.length * seats[0].length;
@@ -72,6 +74,14 @@ class FoodBvg { // asumsi: makan dan minum jadi 1
         this.unitPrice = _unitPrice;
     }
 }
+
+//class Schedule {
+//
+//    String hari;
+//    String jam;
+//    boolean[][] seats = new boolean[6][5];
+//
+//}
 
 class User {
 
