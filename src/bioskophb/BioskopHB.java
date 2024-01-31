@@ -5,9 +5,8 @@ package bioskophb;
  * @author Dionisius - James Jordan - Jason Nathaniel
  */
 class Branch {
-
-    String name;
-    String location;
+    
+    String name, location;
     Studio[] arrStudio;
 
     public Branch(String _name, String _location, int _totalStudio) {
@@ -121,7 +120,7 @@ class Ticket {
 
     public Ticket(int _unitPrice) {
         this.unitPrice = _unitPrice;
-    }
+    } 
 }
 
 //class Schedule {
